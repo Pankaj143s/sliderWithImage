@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Slider</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- Content before slider -->
+    <div class="placeholder">
+      <h1>Welcome to Our Page</h1>
+      <p>Scroll down. The slider will reveal when in view.</p>
+    </div>
+
+    <!-- SLIDER VIEWPORT -->
+    <div class="slider-viewport" id="sliderViewport">
+      <div class="slider-container">
+        <!-- Slide 1 -->
+        <div class="slide" id="slide1">
+          <div class="slide-title">
+            <div class="word-an">AN</div>
+            <div class="word-aaron">AARON</div>
+            <div class="word-einstein">EINSTEIN</div>
+            <div class="word-project">PROJECT</div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" id="slide2">
+          <img
+            src="assets/aaron_and_jens_library_centered.png"
+            alt="Jens and Aron in lab"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide" id="slide3">
+          <div class="video-content">
+            <!-- Video element -->
+            <video id="tickVideo" muted>
+              <source src="assets/TestVideo.mp4" type="video/mp4" />
+            </video>
+            <!-- Play button overlay on video -->
+            <button id="videoPlayBtn">Play Video</button>
+            <!-- White box for all text below the video -->
+            <div class="repellent-all" id="repellentAll">
+              <div class="repellent-text1" id="repellentText1">
+                How do you test a tick repellent?
+              </div>
+              <div class="repellent-text2" id="repellentText2">
+                Ever wondered how many tick repellents don't pass this test?
+              </div>
+              <div class="count-wrapper">
+                <span class="repellent-count" id="repellentCount">0%</span>
+              </div>
+              <div class="repellent-text3" id="repellentText3">
+                In fact – a startling 95% of the tick repellents we evaluated
+                did not pass this test. Isn't that surprising?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Arrows -->
+      <div class="slider-arrow left" id="arrowLeft">&#9664;</div>
+      <div class="slider-arrow right" id="arrowRight">&#9654;</div>
+    </div>
+
+    <!-- Content after slider -->
+    <div class="placeholder">
+      <h1>More Content Below</h1>
+      <p>Keep scrolling for more content.</p>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
